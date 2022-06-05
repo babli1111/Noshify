@@ -181,6 +181,7 @@ a {
   margin: 1rem 0;
   transition: background 0.21s, color 0.15s;
 }
+
 .btn--primary {
   background-color: var(--color-primary);
   color: white;
@@ -188,6 +189,7 @@ a {
 .btn--primary:hover {
   background: #3a8ffd;
 }
+
 .btn--accent {
   background: var(--color-accent);
   color: white;
@@ -203,10 +205,7 @@ a {
 .btn--lightblue:hover {
   background: #00c8eb;
 }
-.btn--block {
-  width: 100%;
-  display: inline-block;
-}
+
 .btn--outline {
   background: transparent;
   color: var(--color-headings);
@@ -217,8 +216,33 @@ a {
   color: white;
 }
 
+.btn--block {
+  width: 100%;
+  display: inline-block;
+}
+
 @media screen and (min-width: 764px) {
   .btn {
+    font-size: 1.5rem;
+  }
+}
+
+/* Inputs*/
+
+.input {
+  border-radius: 30px;
+  border: 1px solid #ccc;
+  color: var(--color-headings);
+  font-size: 1.5rem;
+  outline: 0;
+  padding: 1.5rem 3.5rem;
+}
+.input::placeholder {
+  color: #cbcbd7;
+}
+
+@media screen and (min-width: 764px) {
+  .input {
     font-size: 1.5rem;
   }
 }

@@ -5,21 +5,27 @@
   --color-headings: #1b0760;
   --color-body: #918ca4;
 }
+
+/*typography*/
+
 html {
   font-size: 62.5%;
 }
+
 body {
-  font-family: Inter, Arial, Helvetica, sans-serif;
   color: var(--color-body);
+  font-family: Inter, Arial, Helvetica, sans-serif;
   font-size: 2.4rem;
   line-height: 1.5;
 }
+
 h1,
 h2,
 h3 {
   color: var(--color-headings);
   margin-bottom: 1rem;
 }
+
 h1 {
   font-size: 7rem;
 }
@@ -44,5 +50,65 @@ p {
   }
   h3 {
     font-size: 2.4rem;
+  }
+}
+
+/*Links*/
+a {
+  text-decoration: none;
+}
+
+.arrow-icon {
+  color: var(--color-accent);
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.arrow-icon::after {
+  content: "-->";
+  margin-left: 5px;
+  transition: margin 0.15s;
+}
+
+.arrow-icon:hover::after {
+  margin-left: 10px;
+}
+
+@media screen and (min-width: 1024px) {
+  .arrow-icon {
+    font-size: 1.5rem;
+  }
+}
+
+/*badges*/
+
+.badge {
+  border-radius: 20px;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 0.5rem 2rem;
+  white-space: nowrap;
+}
+
+.badge--primary {
+  background: var(--color-primary);
+  color: white;
+}
+
+.badge--secondary {
+  background: var(--color-secondary);
+  color: white;
+}
+
+.badge--small {
+  font-size: 1.6rem;
+}
+@media screen and (min-width: 1024px) {
+  .badge {
+    font-size: 1.5rem;
+  }
+  .badge--small {
+    font-size: 1.2rem;
   }
 }

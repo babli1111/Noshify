@@ -338,10 +338,10 @@ a {
   display: inline-block;
   position: absolute;
   top: -6px;
-  right: 5%;
+  right: 2%;
 }
 
-@media screen and (min-width: 764px) {
+@media screen and (min-width: 1024px) {
   .plan__name {
     font-size: 1.4rem;
   }

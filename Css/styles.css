@@ -254,6 +254,12 @@ a {
   width: 100%;
   display: inline-block;
 }
+.btn--block.btn--small {
+  width: auto;
+  display: inline-block;
+  padding-left: 4.5rem;
+  padding-right: 4.5rem;
+}
 
 @media screen and (min-width: 1024px) {
   .btn {
@@ -654,10 +660,12 @@ a {
 .nav__brand {
   transform: translateY(5px);
 }
+
 @media screen and (min-width: 768px) {
   .nav__toggler {
     display: none;
   }
+
   .nav__list {
     width: auto;
     display: flex;
@@ -665,7 +673,35 @@ a {
     max-height: 100%;
     opacity: 1;
   }
+
   .nav__item {
     border: 0;
+  }
+}
+
+/* Hero */
+.hero {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
+}
+
+.hero__tagline {
+  font-size: 2rem;
+  color: #b9c3cf;
+  letter-spacing: 1px;
+  margin: 2rem 0 5rem;
+}
+
+.hero__image {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    padding-top: 0;
+  }
+
+  .hero__content {
+    text-align: left;
+    align-self: center;
   }
 }
